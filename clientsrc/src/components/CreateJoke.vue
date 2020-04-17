@@ -1,20 +1,21 @@
 <template>
-  <div class="create-joke">
+  <div class="create-joke text-center">
     <div class="form-group">
       <label for>Setup</label>
       <input
         type="text"
         class="form-control"
-        placeholder="Why did the orange lose the race?"
+        placeholder="Open your joke up here..."
         v-model="newJoke.setup"
       />
     </div>
+    <hr>
     <div class="form-group">
       <label for>Punchline</label>
       <input
         type="text"
         class="form-control"
-        placeholder="Because it ran out of juice!"
+        placeholder="Now get to the funny part.."
         v-model="newJoke.punchline"
       />
     </div>
