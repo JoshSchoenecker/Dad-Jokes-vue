@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid joke">
+    <div class="container-fluid Joke">
         <div class="card col-3 m-4 jokeBorder">
             <div class="card-body">
             <p class="font-size-thicc">

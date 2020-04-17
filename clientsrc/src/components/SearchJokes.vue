@@ -1,7 +1,6 @@
 <template>
-    <div class="component">
-
-
+    <div class="SearchJokes">
+        {{ title }}
     </div>
 </template>
 
@@ -10,7 +9,9 @@
 export default {
     name: 'SearchJokes',
     data(){
-        return {}
+        return {
+            title: "this is joke search"
+        }
     },
     computed:{},
     methods:{},

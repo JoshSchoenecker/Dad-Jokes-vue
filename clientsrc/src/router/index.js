@@ -8,8 +8,6 @@ import Home from "../views/Home.vue";
 import Profile from "../views/Profile.vue";
 // @ts-ignore
 import { authGuard } from "@bcwdev/auth0-vue";
-// @ts-ignore
-import SearchForJokes from "../views/SearchForJokes.vue"
 
 Vue.use(VueRouter);
 
@@ -34,7 +32,7 @@ const routes = [
   {
     path: "/searchForJokes",
     name: "SearchForJokes",
-    component: SearchForJokes
+    component: () => import(/*webpackChunkName:"SearchForJokes" */ '../views/SearchForJokes.vue')
   }
 ];
 

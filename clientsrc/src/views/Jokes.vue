@@ -3,7 +3,7 @@
     <h1 class="text-center font-italic font-weight-bolder">THIS IS THE JOKES PAGES</h1>
     <div class="row bg-dark mx-3 rounded shadow">
       <searchForJokes class="col-6">
-        <button class="btn btn-info">Search Jokes</button>
+        <button @click="$router.push({name:'SearchForJokes'})" class="btn btn-info">Search Jokes</button>
       </searchForJokes>
     </div>
     <div class="card m-5 border-dark shadow">
@@ -36,7 +36,7 @@ export default {
     }
   },
   methods: {},
-  components: { CreateJoke, Joke }
+  components: { CreateJoke, Joke}
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
-    <div class="component">
-
-
+    <div class="SearchForJokes">
+        <p> {{title}} </p>
+        <SearchJokes/>
     </div>
 </template>
 
@@ -11,7 +11,9 @@ import SearchJokes from "../components/SearchJokes"
 export default {
     name: 'SearchForJokes',
     data(){
-        return {}
+        return {
+            title: "this is the joke search page"
+        }
     },
     computed:{},
     methods:{},
